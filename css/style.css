@@ -1,0 +1,648 @@
+.conteiner {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f6f8f9;
+}
+
+.header {
+    max-width: 1440px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #f6f8f9;
+    position: fixed;
+    align-items: center;
+
+
+}
+
+/* ლოგოს გასტილვა და დატრიალება */
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ფონტების გასტილვა  */
+p {
+    font-family: 'Caveat', cursive;
+}
+
+.h2font {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.h3font {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.headnav,
+
+li {
+    font-size: 0.68rem;
+    color: #343638;
+
+}
+
+
+.headmenu {
+    display: flex;
+    gap: 38px;
+    margin-right: 20px;
+
+}
+
+.home :hover::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 2px;
+    background-color: red;
+
+
+}
+
+.world_news :hover::after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 2px;
+    background-color: red;
+
+}
+
+.photos :hover::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: red;
+
+
+}
+
+.contact :hover::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 2px;
+    background-color: red;
+
+
+}
+
+.active {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* სექცია 1 */
+
+.section1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.left {
+    width: 58%;
+    height: 599px;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    background-image: url(../image/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.newshead::after {
+    content: "";
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+/* მარცხენა სექცია 1 */
+
+.lefttext {
+    width: 602px;
+    height: 247px;
+    padding-top: 176px;
+    color: #ffffff;
+}
+
+
+.amazinghead {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+
+.morebutton {
+    width: 134px;
+    height: 40px;
+    background-color: #fa6980;
+    color: #ffffff;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+
+/* მარჯვენა სექცია 2 */
+
+.right {
+    width: 42%;
+    height: 599px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: #ffffff;
+
+
+}
+
+.morenews {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.rightdiv {
+    width: 421px;
+    height: 130px;
+    padding-left: 100px;
+
+}
+
+.travel {
+    padding-top: 40px;
+    color: #fa6980;
+}
+
+.articletitle {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.textlorem {
+    color: #a6adb4;
+    width: 381px;
+    padding-bottom: 10px;
+}
+
+
+/* იკონი შემოვიტანე   */
+
+.time::before {
+
+    content: "\f017";
+    font-family: "font awesome 6 free";
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.rightdiv2 {
+    padding-top: 40px;
+}
+
+
+
+/* მეორე სექცია სურათების შემოვიტანე და გავსტილე */
+
+.section2 {
+    width: 80.5%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+
+}
+
+.card1 {
+    width: 360px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: start;
+    transition-duration: 2s;
+
+}
+.card1:hover {
+
+    transform: scale(2);
+
+}
+
+.picture1 {
+    width: 100%;
+    height: 180px;
+    background-image: url(../image/poc1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.picture2 {
+    width: 100%;
+    height: 180px;
+    background-image: url(../image/pic2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.picture3 {
+    width: 100%;
+    height: 180px;
+    background-image: url(../image/pic3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.picname {
+    padding-top: 220px;
+    padding-left: 40px;
+}
+
+.pictext {
+
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 39px;
+    color: #a6adb4;
+    font-size: 0.81rem;
+}
+
+/* სექცია 3 */
+
+
+
+.picturediv {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+
+/* მარცხენა მხარე */
+
+
+.leftdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.imgcard {
+    width: 760px;
+    height: 430px;
+    color: #ffffff;
+
+}
+
+.foto1 {
+    background-image: url(../image/foto1.png );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.foto2 {
+    background-image: url(../image/foto2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.imgcardtext {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.imgcardtext1 {
+    padding-top: 232px;
+    padding-left: 40px;
+}
+
+.imgcardtext3 {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* .... მარჯვენა 3 სურათის და ტეხსტი შემოვიტანე... */
+
+.rightdivcards {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.rightcardimg {
+    width: 361px;
+    height: 274px;
+    border-radius: 8px;
+
+}
+
+.img11 {
+
+    height: 210px;
+    border-radius: 8px;
+    background-image: url(../image/eleph.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img22 {
+    height: 210px;
+    border-radius: 8px;
+    background-image: url(../image/bird.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img33 {
+    height: 210px;
+    border-radius: 8px;
+    background-image: url(../image/way.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.rightcardtext {
+    text-align: start;
+    padding-top: 258px;
+}
+
+
+/* ფუტერი */
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 101px;
+    background-color: #a6adb4;
+
+}
+
+
+.footdiv {
+    width: 80.5%;
+    margin: 0 auto;
+    padding-top: 58px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logofoot {
+    width: 50px;
+    height: 50px;
+}
+
+.footdiv1 {
+    display: flex;
+    text-align: start;
+    gap: 40px;
+    font-size: 0.81rem;
+
+
+}
+
+.footerli {
+    padding-top: 11px;
+}
+
+.footmail {
+    width: 262px;
+    font-size: 0.68rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footmail1 {
+    width: 100%;
+    height: 40px;
+    background-color: #a6adb4;
+    border-radius: 8px;
+
+}
+
+
+.footicon {
+    display: flex;
+    gap: 32px;
+
+}
+
+
+
+/* world_news ახალი გვერდი */
+
+.sectionworld {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 103px;
+    display: flex;
+}
+
+/* მარცხენა მხარე */
+
+.leftphotos {
+    width: 50%;
+    height: 500px;
+    background-image: url(../image/worldphoto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.newstext {
+    font-size: 1.87rem;
+    color: white;
+
+}
+
+
+/* მარჯვენა მხარე ძიების ველი */
+
+.rightcontact {
+    width: 50%;
+    background-color: white;
+}
+
+.formediv {
+    width: 361px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.datediv {
+    padding-top: 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchdiv {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.donebutton {
+    margin-top: 40px;
+    width: 134px;
+    height: 40px;
+    background-color: #fa6980;
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+
+/* მეორე გვერდის მეორე სექცია */
+
+.section2page {
+    width: 80.5%;
+    display: flex;
+    margin: 36px auto;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    
+      
+
+}
+.divpage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+
+}
+
+.divimglogo1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.textimg{
+    width: 361px;
+}
+
+.divimglogo{
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/faceimg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.text12{
+    width: 361px;
+    height: 172px;
+}
+
+
+/* მეორე გვერდის მესამე სექცია */
+
+.section3page{
+    width: 80.5%;
+    display: flex;
+    margin: 39px auto;
+
+}
+.pototextdiv{
+    width: 100%;
+    height: 831px;
+    border-bottom: 2px solid grey;
+}
+.page2foto{
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/page2eleph.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.divtext2{
+    width: 100%;
+    padding-top: 80px;
+    flex-direction: column;
+
+}
+.divtextline2{
+padding-top: 30px;
+}
+
+
+/* მეორე გვერდის ფუტერი */
+
+.footerpage2{
+    margin-top: 160px;
+}
