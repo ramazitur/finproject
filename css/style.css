@@ -2,14 +2,15 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    position: relative;
     background-color: #f6f8f9;
+    position: relative;
 }
 
 .header {
-    max-width: 1440px;
-    width: 100%;
-    height: 50px;
+
+    max-width: inherit;
+    width: inherit;
+    padding: 21px 20px 19px 20px;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -24,7 +25,6 @@
 .logo {
     width: 40px;
     height: 40px;
-    margin-left: 20px;
     animation-name: rotate;
     animation-duration: 5s;
     animation-timing-function: linear;
@@ -70,7 +70,7 @@ li {
 .headmenu {
     display: flex;
     gap: 38px;
-    margin-right: 20px;
+
 
 }
 
@@ -119,34 +119,49 @@ li {
 }
 
 
-
 /* სექცია 1 */
 
 .section1 {
     width: 100%;
+    padding-top: 82px;
     display: flex;
     flex-wrap: wrap;
+
 }
 
+/* .divsection1 {
+    width: 100%;
+   
+
+} */
 
 
 .left {
     width: 58%;
+    margin: 0 auto;
+
+
+}
+
+.photodiv1 {
+
+    width: 100%;
     height: 599px;
-    display: flex;
-    justify-content: center;
-    text-align: start;
     background-image: url(../image/image1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+
 
 }
 
 .newshead::after {
     content: "";
     display: block;
-    width: 562px;
+    width: 90%;
     height: 2px;
     background-color: #ffffff;
     margin-top: 40px;
@@ -155,8 +170,7 @@ li {
 /* მარცხენა სექცია 1 */
 
 .lefttext {
-    width: 602px;
-    height: 247px;
+    width: 70%;
     padding-top: 176px;
     color: #ffffff;
 }
@@ -175,6 +189,7 @@ li {
     color: #ffffff;
     margin-top: 30px;
     border-radius: 10px;
+    cursor: pointer;
 
 }
 
@@ -182,29 +197,43 @@ li {
 
 .right {
     width: 42%;
-    height: 599px;
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
     background-color: #ffffff;
+    
+    padding: 100px 120px 100px 100px;
 
 
 }
 
-.morenews {
-    padding-top: 100px;
-    padding-left: 100px;
+.morenews::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ebeded;
+    margin-top: 40px;
 }
+
 
 .rightdiv {
-    width: 421px;
-    height: 130px;
-    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+
+}
+
+.rightdiv1 {
+    width: 100%;
+   
 
 }
 
 .travel {
-    padding-top: 40px;
     color: #fa6980;
 }
 
@@ -215,7 +244,6 @@ li {
 
 .textlorem {
     color: #a6adb4;
-    width: 381px;
     padding-bottom: 10px;
 }
 
@@ -231,9 +259,7 @@ li {
 
 }
 
-.rightdiv2 {
-    padding-top: 40px;
-}
+
 
 
 
@@ -241,8 +267,8 @@ li {
 
 .section2 {
     width: 80.5%;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 40px auto;
+
 
 }
 
@@ -256,14 +282,15 @@ li {
 }
 
 .card1 {
-    width: 360px;
+    width: 30%;
     height: 350px;
     background-color: #ffffff;
-    border-radius: 5px;
     text-align: start;
     transition-duration: 2s;
+    border-radius: 5px;
 
 }
+
 .card1:hover {
 
     transform: scale(2);
@@ -277,6 +304,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px;
 
 }
 
@@ -287,6 +315,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px;
 }
 
 .picture3 {
@@ -296,6 +325,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px;
 
 
 }
@@ -319,6 +349,7 @@ li {
 
 
 .picturediv {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 40px;
@@ -329,6 +360,7 @@ li {
 
 
 .leftdiv {
+    width: 66%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -336,7 +368,7 @@ li {
 
 
 .imgcard {
-    width: 760px;
+    width: 100%;
     height: 430px;
     color: #ffffff;
 
@@ -347,7 +379,8 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    border-radius: 8px;
+
 }
 
 .foto2 {
@@ -355,6 +388,7 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 8px;
 }
 
 
@@ -375,23 +409,24 @@ li {
 }
 
 
-/* .... მარჯვენა 3 სურათის და ტეხსტი შემოვიტანე... */
+/* .... მარჯვენა 3 სურათის და ტეხსტი ... */
 
 .rightdivcards {
+    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 38px;
 }
 
 .rightcardimg {
-    width: 361px;
+    width: 100%;
     height: 274px;
     border-radius: 8px;
 
 }
 
 .img11 {
-
+    width: 100%;
     height: 210px;
     border-radius: 8px;
     background-image: url(../image/eleph.png);
@@ -402,6 +437,7 @@ li {
 }
 
 .img22 {
+    width: 100%;
     height: 210px;
     border-radius: 8px;
     background-image: url(../image/bird.png);
@@ -412,6 +448,7 @@ li {
 }
 
 .img33 {
+    width: 100%;
     height: 210px;
     border-radius: 8px;
     background-image: url(../image/way.png);
@@ -478,8 +515,9 @@ footer {
 .footmail1 {
     width: 100%;
     height: 40px;
-    background-color: #a6adb4;
+    background-color: transparent;
     border-radius: 8px;
+
 
 }
 
@@ -499,6 +537,8 @@ footer {
     margin: 0 auto;
     padding-top: 103px;
     display: flex;
+    border-bottom: 2px solid #ebeded;
+    padding-bottom: 36px;
 }
 
 /* მარცხენა მხარე */
@@ -513,6 +553,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -531,7 +572,7 @@ footer {
 }
 
 .formediv {
-    width: 361px;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -569,31 +610,33 @@ footer {
 .section2page {
     width: 80.5%;
     display: flex;
-    margin: 36px auto;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    
-      
+    margin: 0 auto;
+    padding-bottom: 42px;
+    border-bottom: 2px solid #ebeded;
+
+
+
 
 }
-.divpage{
+
+.divpage {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 42px;
+    flex-wrap: wrap;
+
 
 }
 
-.divimglogo1{
+.divimglogo1 {
+    width: 30%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.textimg{
-    width: 361px;
-}
 
-.divimglogo{
+.divimglogo {
     width: 40px;
     height: 40px;
     background-image: url(../image/faceimg.png);
@@ -602,26 +645,32 @@ footer {
     background-size: cover;
 
 }
-.text12{
-    width: 361px;
-    height: 172px;
+
+
+
+.ptexts {
+    width: 30%;
+
 }
 
 
 /* მეორე გვერდის მესამე სექცია */
 
-.section3page{
+.section3page {
     width: 80.5%;
     display: flex;
     margin: 39px auto;
 
+
 }
-.pototextdiv{
+
+.pototextdiv {
     width: 100%;
-    height: 831px;
-    border-bottom: 2px solid grey;
+    padding-bottom: 88px;
+    border-bottom: 2px solid #ebeded;
 }
-.page2foto{
+
+.page2foto {
     width: 100%;
     height: 500px;
     background-image: url(../image/page2eleph.png);
@@ -630,19 +679,21 @@ footer {
     background-size: cover;
 
 }
-.divtext2{
+
+.divtext2 {
     width: 100%;
     padding-top: 80px;
     flex-direction: column;
 
 }
-.divtextline2{
-padding-top: 30px;
+
+.divtextline2 {
+    padding-top: 30px;
 }
 
 
 /* მეორე გვერდის ფუტერი */
 
-.footerpage2{
+.footerpage2 {
     margin-top: 160px;
 }
