@@ -1,24 +1,263 @@
-@media screen and (max-width: 980px) {
-
-
+@media screen and (max-width: 768px) and (min-width: 480px) {
     .none {
         display: none;
     }
 
+    .nonepicture {
+        display: none;
+    }
+
+    .nothing {
+        display: none;
+    }
+
     .section1 {
+
         flex-direction: column;
+
     }
 
     .left {
+
         width: 100%;
+        height: 399px;
 
     }
+
+    .lefttext {
+        padding-top: 83px;
+    }
+
     .right {
         width: 100%;
-        
-    }
-    .rightdiv0{
-        display: flex;
+        height: 343px;
+
+
     }
 
+    .morenews {
+        padding-top: 40px;
+        padding-left: 80px;
+    }
+
+    .rightdiv {
+        display: flex;
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-bottom: 30px;
+
+    }
+
+    .card1 {
+        width: 48%;
+    }
+
+    /* სექცია 3 */
+    .picturediv {
+        flex-direction: column;
+
+    }
+
+    .leftdiv {
+        width: 100%;
+    }
+
+    .rightdivcards {
+        width: 100%;
+        margin: 40px auto;
+
+    }
+
+
+    .rightcardimg {
+        width: 44%;
+        height: 180px;
+    }
+
+    .rightcardtext {
+        padding-top: 160px;
+    }
+
+    .footicon {
+        padding-right: 30px;
+    }
+
+
+    /* world_news ახალი გვერდი  */
+
+    .sectionworld {
+        flex-direction: column;
+    }
+
+    .leftphotos {
+        width: 100%;
+        height: 400px;
+    }
+
+    .newstext {
+        padding-top: 100px;
+    }
+
+    .rightcontact {
+        width: 100%;
+        height: 400px;
+    }
+
+    .datediv {
+        padding-top: 100px;
+    }
+
+    .section2page {
+        flex-direction: column;
+    }
+
+    .ptexts2 {
+        width: 100%;
+        padding-top: 40px;
+    }
+   
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .none {
+        display: none;
+    }
+
+    .nonepicture {
+        display: none;
+    }
+
+    .nothing {
+        display: none;
+    }
+
+    .section1 {
+
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
+
+    }
+
+    .left {
+
+        width: 100%;
+        height: 399px;
+
+    }
+
+    .lefttext {
+        padding-top: 83px;
+    }
+
+    .right {
+        width: 100%;
+        height: 343px;
+
+
+    }
+
+    .morenews {
+        padding-top: 40px;
+        padding-left: 80px;
+    }
+
+    .rightdiv {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-bottom: 30px;
+
+    }
+
+    .card1 {
+        width: 48%;
+    }
+
+    /* სექცია 3 */
+    .picturediv {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+
+    .leftdiv {
+        width: 100%;
+    }
+
+    .rightdivcards {
+        width: 100%;
+        margin: 40px auto;
+
+    }
+
+
+    .rightcardimg {
+        width: 44%;
+        height: 180px;
+    }
+
+    .rightcardtext {
+        padding-top: 160px;
+    }
+
+    .footicon {
+        padding-right: 30px;
+    }
+
+
+    /* world_news ახალი გვერდი  */
+
+    .sectionworld {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .leftphotos {
+        width: 100%;
+        height: 400px;
+    }
+
+    .newstext {
+        padding-top: 100px;
+    }
+
+    .rightcontact {
+        width: 100%;
+        height: 400px;
+    }
+
+    .datediv {
+        padding-top: 100px;
+    }
+
+    .section2page {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .ptexts2 {
+        width: 100%;
+        padding-top: 40px;
+    }
+   
 }

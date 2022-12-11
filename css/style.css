@@ -4,6 +4,7 @@
     margin: 0 auto;
     background-color: #f6f8f9;
     position: relative;
+
 }
 
 .header {
@@ -12,14 +13,20 @@
     width: inherit;
     padding: 21px 20px 19px 20px;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: space-between;
     background-color: #f6f8f9;
     position: fixed;
-    align-items: center;
-
+    top: 0;
 
 }
+
+.nothing {
+    font-size: 1.87rem;
+    display: none;
+
+}
+
 
 /* ლოგოს გასტილვა და დატრიალება */
 .logo {
@@ -123,22 +130,15 @@ li {
 
 .section1 {
     width: 100%;
-    padding-top: 82px;
     display: flex;
-    flex-wrap: wrap;
-
+    padding-top: 80px;
 }
 
-/* .divsection1 {
-    width: 100%;
-   
-
-} */
-
-
 .left {
+
     width: 58%;
-    margin: 0 auto;
+    height: 599px;
+    overflow: hidden;
 
 
 }
@@ -146,7 +146,7 @@ li {
 .photodiv1 {
 
     width: 100%;
-    height: 599px;
+    height: 100%;
     background-image: url(../image/image1.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -156,12 +156,13 @@ li {
     text-align: start;
 
 
+
 }
 
 .newshead::after {
     content: "";
     display: block;
-    width: 90%;
+    width: 100%;
     height: 2px;
     background-color: #ffffff;
     margin-top: 40px;
@@ -197,39 +198,37 @@ li {
 
 .right {
     width: 42%;
-    display: flex;
+    height: 599px;
+    overflow: hidden;
+    background-color: white;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-    background-color: #ffffff;
-    
-    padding: 100px 120px 100px 100px;
 
 
 }
 
+.morenews {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+
+
 .morenews::after {
     content: "";
     display: block;
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: #ebeded;
     margin-top: 40px;
 }
 
-
 .rightdiv {
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  
-
+    padding-left: 100px;
+    width: 88%;
 }
 
 .rightdiv1 {
-    width: 100%;
-   
+    padding-top: 20px;
 
 }
 
@@ -248,7 +247,7 @@ li {
 }
 
 
-/* იკონი შემოვიტანე   */
+/* იკონი საათი  */
 
 .time::before {
 
@@ -263,7 +262,7 @@ li {
 
 
 
-/* მეორე სექცია სურათების შემოვიტანე და გავსტილე */
+/* მეორე სექცია სურათების */
 
 .section2 {
     width: 80.5%;
@@ -275,42 +274,46 @@ li {
 .card {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 40px;
+
 
 }
 
 .card1 {
     width: 30%;
     height: 350px;
+    overflow: hidden;
     background-color: #ffffff;
     text-align: start;
-    transition-duration: 2s;
+    transition-duration: 1s;
     border-radius: 5px;
+    cursor: pointer;
+
 
 }
 
 .card1:hover {
+    filter: grayscale(100%);
 
-    transform: scale(2);
 
 }
 
 .picture1 {
     width: 100%;
-    height: 180px;
+    height: 50%;
     background-image: url(../image/poc1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
 
+
 }
 
 .picture2 {
     width: 100%;
-    height: 180px;
+    height: 50%;
     background-image: url(../image/pic2.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -320,13 +323,12 @@ li {
 
 .picture3 {
     width: 100%;
-    height: 180px;
+    height: 50%;
     background-image: url(../image/pic3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
-
 
 }
 
@@ -356,11 +358,13 @@ li {
     justify-content: space-between;
 }
 
-/* მარცხენა მხარე */
+/* სექცია 3 მარცხენა მხარე */
 
 
 .leftdiv {
-    width: 66%;
+    width: 64%;  
+    height: 430px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -369,7 +373,8 @@ li {
 
 .imgcard {
     width: 100%;
-    height: 430px;
+    height: 100%;
+    overflow: hidden;
     color: #ffffff;
 
 }
@@ -409,13 +414,15 @@ li {
 }
 
 
-/* .... მარჯვენა 3 სურათის და ტეხსტი ... */
+/* ....სექცია 3... მარჯვენა 3 სურათის და ტეხსტი ... */
 
 .rightdivcards {
-    width: 30%;
+    width: 32%;
     display: flex;
-    flex-direction: column;
-    gap: 38px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
 }
 
 .rightcardimg {
@@ -423,11 +430,12 @@ li {
     height: 274px;
     border-radius: 8px;
 
+
 }
 
 .img11 {
     width: 100%;
-    height: 210px;
+    height: 80%;
     border-radius: 8px;
     background-image: url(../image/eleph.png);
     background-position: center;
@@ -438,7 +446,7 @@ li {
 
 .img22 {
     width: 100%;
-    height: 210px;
+    height: 80%;
     border-radius: 8px;
     background-image: url(../image/bird.png);
     background-position: center;
@@ -449,7 +457,7 @@ li {
 
 .img33 {
     width: 100%;
-    height: 210px;
+    height: 80%;
     border-radius: 8px;
     background-image: url(../image/way.png);
     background-position: center;
@@ -516,6 +524,7 @@ footer {
     width: 100%;
     height: 40px;
     background-color: transparent;
+    margin-top: 30px;
     border-radius: 8px;
 
 
@@ -524,7 +533,7 @@ footer {
 
 .footicon {
     display: flex;
-    gap: 32px;
+    gap: 30%;
 
 }
 
@@ -535,7 +544,6 @@ footer {
 .sectionworld {
     width: 80%;
     margin: 0 auto;
-    padding-top: 103px;
     display: flex;
     border-bottom: 2px solid #ebeded;
     padding-bottom: 36px;
@@ -578,6 +586,8 @@ footer {
     flex-direction: column;
     justify-content: center;
 
+
+
 }
 
 .datediv {
@@ -612,22 +622,12 @@ footer {
     display: flex;
     margin: 0 auto;
     padding-bottom: 42px;
+    padding-top: 42px;
     border-bottom: 2px solid #ebeded;
 
-
-
-
 }
 
-.divpage {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 42px;
-    flex-wrap: wrap;
 
-
-}
 
 .divimglogo1 {
     width: 30%;
@@ -643,15 +643,25 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
 }
 
 
+
+.ptexts2 {
+    width: 70%;
+    display: flex;
+    gap: 39px;
+
+}
 
 .ptexts {
-    width: 30%;
+    width: 100%;
 
 }
+
+
 
 
 /* მეორე გვერდის მესამე სექცია */
@@ -697,3 +707,845 @@ footer {
 .footerpage2 {
     margin-top: 160px;
 }
+
+
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.conteiner {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f6f8f9;
+    position: relative;
+
+}
+
+.header {
+
+    max-width: inherit;
+    width: inherit;
+    padding: 21px 20px 19px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #f6f8f9;
+    position: fixed;
+    top: 0;
+
+}
+
+.nothing {
+    font-size: 1.87rem;
+    display: none;
+
+}
+
+
+/* ლოგოს გასტილვა და დატრიალება */
+.logo {
+    width: 40px;
+    height: 40px;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+/* ფონტების გასტილვა  */
+p {
+    font-family: 'Caveat', cursive;
+}
+
+.h2font {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.h3font {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.headnav,
+
+li {
+    font-size: 0.68rem;
+    color: #343638;
+
+}
+
+
+.headmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 38px;
+
+
+}
+
+.home :hover::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 2px;
+    background-color: red;
+
+
+}
+
+.world_news :hover::after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 2px;
+    background-color: red;
+
+}
+
+.photos :hover::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: red;
+
+
+}
+
+.contact :hover::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 2px;
+    background-color: red;
+
+
+}
+
+.active {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* სექცია 1 */
+
+.section1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 80px;
+}
+
+.left {
+
+    width: 58%;
+    height: 599px;
+    overflow: hidden;
+
+
+}
+
+.photodiv1 {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: start;
+
+
+
+}
+
+.newshead::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+/* მარცხენა სექცია 1 */
+
+.lefttext {
+    width: 70%;
+    padding-top: 176px;
+    color: #ffffff;
+}
+
+
+.amazinghead {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+
+.morebutton {
+    width: 134px;
+    height: 40px;
+    background-color: #fa6980;
+    color: #ffffff;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/* მარჯვენა სექცია 2 */
+
+.right {
+    width: 42%;
+    height: 599px;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+
+}
+
+.morenews {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+
+
+.morenews::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #ebeded;
+    margin-top: 40px;
+}
+
+.rightdiv {
+    padding-left: 100px;
+    width: 88%;
+}
+
+.rightdiv1 {
+    padding-top: 20px;
+
+}
+
+.travel {
+    color: #fa6980;
+}
+
+.articletitle {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.textlorem {
+    color: #a6adb4;
+    padding-bottom: 10px;
+}
+
+
+/* იკონი საათი  */
+
+.time::before {
+
+    content: "\f017";
+    font-family: "font awesome 6 free";
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+
+
+
+
+/* მეორე სექცია სურათების */
+
+.section2 {
+    width: 80.5%;
+    margin: 40px auto;
+
+
+}
+
+.card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 40px;
+
+
+}
+
+.card1 {
+    width: 30%;
+    height: 350px;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: start;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.card1:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+
+}
+
+.picture1 {
+    width: 100%;
+    height: 50%;
+    background-image: url(../image/poc1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+
+}
+
+.picture2 {
+    width: 100%;
+    height: 50%;
+    background-image: url(../image/pic2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.picture3 {
+    width: 100%;
+    height: 50%;
+    background-image: url(../image/pic3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.picname {
+    padding-top: 220px;
+    padding-left: 40px;
+}
+
+.pictext {
+
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 39px;
+    color: #a6adb4;
+    font-size: 0.81rem;
+}
+
+/* სექცია 3 */
+
+
+
+.picturediv {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* სექცია 3 მარცხენა მხარე */
+
+
+.leftdiv {
+    width: 64%;  
+    height: 430px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+}
+
+
+.imgcard {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #ffffff;
+
+}
+
+.foto1 {
+    background-image: url(../image/foto1.png );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+
+}
+
+.foto2 {
+    background-image: url(../image/foto2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+
+.imgcardtext {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.imgcardtext1 {
+    padding-top: 232px;
+    padding-left: 40px;
+}
+
+.imgcardtext3 {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/* ....სექცია 3... მარჯვენა 3 სურათის და ტეხსტი ... */
+
+.rightdivcards {
+    width: 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+
+}
+
+.rightcardimg {
+    width: 100%;
+    height: 274px;
+    border-radius: 8px;
+
+
+}
+
+.img11 {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    background-image: url(../image/eleph.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img22 {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    background-image: url(../image/bird.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img33 {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    background-image: url(../image/way.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.rightcardtext {
+    text-align: start;
+    padding-top: 258px;
+}
+
+
+/* ფუტერი */
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 101px;
+    background-color: #a6adb4;
+
+}
+
+
+.footdiv {
+    width: 80.5%;
+    margin: 0 auto;
+    padding-top: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.logofoot {
+    width: 50px;
+    height: 50px;
+}
+
+.footdiv1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    gap: 40px;
+    font-size: 0.81rem;
+
+
+}
+
+.footerli {
+    padding-top: 11px;
+}
+
+.footmail {
+    width: 262px;
+    font-size: 0.68rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+}
+
+.footmail1 {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    margin-top: 30px;
+    border-radius: 8px;
+
+
+}
+
+
+.footicon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30%;
+
+}
+
+
+
+/* world_news ახალი გვერდი */
+
+.sectionworld {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 2px solid #ebeded;
+    padding-bottom: 36px;
+}
+
+/* მარცხენა მხარე */
+
+.leftphotos {
+    width: 50%;
+    height: 500px;
+    background-image: url(../image/worldphoto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+
+}
+
+.newstext {
+    font-size: 1.87rem;
+    color: white;
+
+}
+
+
+/* მარჯვენა მხარე ძიების ველი */
+
+.rightcontact {
+    width: 50%;
+    background-color: white;
+}
+
+.formediv {
+    width: 60%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+
+
+}
+
+.datediv {
+    padding-top: 124px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+}
+
+.searchdiv {
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+
+}
+
+.donebutton {
+    margin-top: 40px;
+    width: 134px;
+    height: 40px;
+    background-color: #fa6980;
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+
+/* მეორე გვერდის მეორე სექცია */
+
+.section2page {
+    width: 80.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 42px;
+    padding-top: 42px;
+    border-bottom: 2px solid #ebeded;
+
+}
+
+
+
+.divimglogo1 {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+}
+
+.divimglogo {
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/faceimg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+
+
+.ptexts2 {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 39px;
+
+}
+
+.ptexts {
+    width: 100%;
+
+}
+
+
+
+
+/* მეორე გვერდის მესამე სექცია */
+
+.section3page {
+    width: 80.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 39px auto;
+
+
+}
+
+.pototextdiv {
+    width: 100%;
+    padding-bottom: 88px;
+    border-bottom: 2px solid #ebeded;
+}
+
+.page2foto {
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/page2eleph.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.divtext2 {
+    width: 100%;
+    padding-top: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+.divtextline2 {
+    padding-top: 30px;
+}
+
+
+/* მეორე გვერდის ფუტერი */
+
+.footerpage2 {
+    margin-top: 160px;
+}
+
+
+
+
+
+
+
+
+
+
