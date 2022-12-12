@@ -26,6 +26,9 @@
     display: none;
 
 }
+.time3{
+    display: none;
+}
 
 
 /* ლოგოს გასტილვა და დატრიალება */
@@ -466,7 +469,7 @@ li {
 
 .rightcardtext {
     text-align: start;
-    padding-top: 258px;
+    padding-top: 278px;
 }
 
 
@@ -709,7 +712,6 @@ footer {
 
 
 
-
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -750,6 +752,9 @@ footer {
     font-size: 1.87rem;
     display: none;
 
+}
+.time3{
+    display: none;
 }
 
 
@@ -1129,8 +1134,8 @@ li {
 
 .leftdiv {
     width: 64%;  
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1242,7 +1247,7 @@ li {
 
 .rightcardtext {
     text-align: start;
-    padding-top: 258px;
+    padding-top: 278px;
 }
 
 
@@ -1535,13 +1540,6 @@ footer {
 .footerpage2 {
     margin-top: 160px;
 }
-
-
-
-
-
-
-
 
 
 
