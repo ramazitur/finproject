@@ -31,14 +31,14 @@
 
     .morenews {
         padding-top: 40px;
-        padding-left: 24px;
+        padding-left: 54px;
     }
 
     .rightdiv {
         display: flex;
         flex-direction: column;
         padding-top: 40px;
-        padding-left: 24px;
+        padding-left: 54px;
 
 
     }
@@ -249,7 +249,7 @@
 
     .morenews {
         padding-top: 40px;
-        padding-left: 24px;
+        padding-left: 54px;
     }
 
     .rightdiv {
@@ -261,7 +261,7 @@
             -ms-flex-direction: column;
                 flex-direction: column;
         padding-top: 40px;
-        padding-left: 24px;
+        padding-left: 54px;
 
 
     }
